@@ -106,7 +106,7 @@
 }
 
 .fv_heading span {
-    color: #f7862b;
+    color: #e5c827;
 }
 
 .fv_tagline {
@@ -135,7 +135,7 @@
     border: none;
     margin-top: 1rem;
     color: #000000;
-    background-color: #f7862b;
+    background-color: #e5c827;
 }
 
 .fv_button {
@@ -146,15 +146,48 @@
     padding: 0.5rem 2.25rem;
     border: none;
     margin-top: 1rem;
-    border: 2px solid #f7862b;
+    border: 2px solid #e5c827;
     background-color: #000000;
-    color: #f7862b;
+    color: #e5c827;
 }
 
 .questions_container {
     display: flex;
     align-items: center;
 }
+
+
+
+.create-task-input {
+  font-size: 24px;
+  padding: 16px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.create-task-button {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #e5c827;
+  color: #000000;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.create-task-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
 /* For devices below 768px */
 @media screen and (max-width: 767px) {
   .first_view_container {
