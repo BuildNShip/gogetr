@@ -157,30 +157,56 @@
 }
 
 
-
-.create-task-input {
-  font-size: 24px;
+.box_container {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  font-family: "Manrope", sans-serif;
   padding: 16px;
-  border: none;
+  min-width: 400px;
+  border-radius: 4px;
+}
+.form-container{
+  display: flex;
+  flex-direction: column;
+}
+.create-task-input {
+  width: 85px;
+  min-height: 19px;
+  padding: 16px;
+  border: 1px solid silver;
   border-radius: 8px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-  width: 100%;
+  margin: 20px;
   max-width: 600px;
   text-align: center;
+  background-color: #1f1f1f;
+  min-width: 338px;
+
 }
 
 .create-task-button {
-  font-size: 18px;
+   /* font-size: 18px;
+  min-width: -12px;
   font-weight: bold;
-  padding: 16px 32px;
+  padding: 12px 32px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
   background-color: #e5c827;
   color: #000000;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  max-width: 168px;
+  margin: auto; */
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  padding: 0.5rem 2.25rem;
+  border: none;
+  margin: auto;
+  color: #000000;
+  background-color: #e5c827;
+  max-width: 168px;
+
 }
 
 .create-task-button:hover {

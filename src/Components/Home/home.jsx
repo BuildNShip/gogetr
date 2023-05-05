@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./Home.css";
-import Footer from "../Footer/footer";
 
 const Home = () => {
     const [showInput, setShowInput] = useState(false);
@@ -23,10 +22,12 @@ const Home = () => {
 
     const renderTaskInput = () => {
         return (
-            <form onSubmit={handleSubmit}>
-                <input className="create-task-input" type="text" value={taskName} onChange={handleTaskNameChange} />
-                <button className="create-task-button" type="submit">Add Task</button>
-            </form>
+            <div className="box_container">
+                  <form onSubmit={handleSubmit} className="form-container">
+                    <input className="create-task-input" type="text" value={taskName} onChange={handleTaskNameChange} />
+                    <button className="create-task-button" type="submit">Add Task</button>
+                 </form>
+            </div>
         );
     };
 
@@ -37,6 +38,7 @@ const Home = () => {
                     <div className="first_view_texts">
                         {showInput ? (
                             renderTaskInput()
+                            
                         ) : (
                             <>
                                 <p className="fv_heading">
@@ -56,7 +58,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <Footer />
+
         </div>
     );
 };
