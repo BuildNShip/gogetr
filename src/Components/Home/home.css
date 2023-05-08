@@ -161,7 +161,7 @@
   background-color: #1f1f1f;
   color: #ffffff;
   font-family: "Manrope", sans-serif;
-  padding: 16px;
+  padding: 16px 16px 42px 16px;
   min-width: 400px;
   border-radius: 4px;
 }
@@ -180,6 +180,7 @@
   text-align: center;
   background-color: #1f1f1f;
   min-width: 338px;
+  color: white;
 
 }
 
@@ -217,7 +218,7 @@
 /* For devices below 768px */
 @media screen and (max-width: 767px) {
   .first_view_container {
-    height: auto;
+    height: 126vh;
     padding: 2rem;
   }
   
